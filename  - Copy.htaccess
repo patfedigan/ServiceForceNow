@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^patfedigan.com$ [OR,NC]
+RewriteCond %{HTTP_HOST} ^patrickfedigan.nfshost.com$ [NC]
+RewriteRule ^(.*)$ https://www.patfedigan.com/$1 [R=301,L]
