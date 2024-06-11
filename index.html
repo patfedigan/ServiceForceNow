@@ -49,20 +49,6 @@
 			window.location = encodeURI("mailto:patfedigan@gmail.com?Subject=ServiceForceNow Inquiry: " + document.getElementById("message").value + "&Body=" + document.getElementById("message").value + "\n\n" + document.getElementById("name").value + "\n" + document.getElementById("email").value + "\n" + document.getElementById("phone").value);
 		}
 	</script>
-	<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-				<script>
-				(function() {
-				  var target = document.currentScript;
-				  window.addEventListener('load', function() {
-				    calendar.schedulingButton.load({
-				      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0jsqAdPWyrpwRlysVDwG6SGAWPXxr2m9lphJN258hDzJkF9nuR2zkol8gYQFDOwvGDe6xhz9gh?gv=true',
-				      color: '#039BE5',
-				      label: 'Book an appointment',
-				      target,
-				    });
-				  });
-				})();
-	</script>
 	<meta name="google-site-verification" content="h3CHeQyJMzYX7Ukd-N9-lcKx2yPYARNFGofBTUS6uSE" />
 
 </head>
@@ -200,7 +186,20 @@
 				<h3 class="section-heading text-uppercase">Link to book time with our calendar</h3>
 				<!-- Google Calendar Appointment Scheduling begin -->
 				<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-				
+				<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+				<script>
+				(function() {
+				  var target = document.currentScript;
+				  window.addEventListener('load', function() {
+				    calendar.schedulingButton.load({
+				      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0jsqAdPWyrpwRlysVDwG6SGAWPXxr2m9lphJN258hDzJkF9nuR2zkol8gYQFDOwvGDe6xhz9gh?gv=true',
+				      color: '#039BE5',
+				      label: 'Book an appointment',
+				      target,
+				    });
+				  });
+				})();
+				</script>
 				<!-- end Google Calendar Appointment Scheduling -->
 			</div>
 		</div>
